@@ -394,6 +394,7 @@ div.footer h6 {
 
     ul li a {
         display: block;
+        font-size: 0.8rem;
     }
 
     /* hero */
@@ -515,7 +516,7 @@ div.footer h6 {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 466px) {
     
     /* nav */
     div.nav-bar {
