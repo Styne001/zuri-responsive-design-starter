@@ -10,8 +10,8 @@
 <body>
     <div class="nav-bar">
         <div class="logo">Snapshot</div>
-        <img src="/images/icon-hamburger.svg" alt="hamburger icon" class="hamburger" srcset="">
-        <ul class="nav-links">
+        <img src="/images/icon-hamburger.svg" alt="hamburger icon" class="hamburger" id="hamburger" srcset="">
+        <ul class="nav-links" id="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Gallery</a></li>
@@ -106,6 +106,13 @@
     </div>
 </body>
 
-<script></script>
+<script>
+   const hamburger = document.getElementById('hamburger');
+   const navUl = document.getElementById('nav-links');
+
+   hamburger.addEventListener('click', () => {
+       navUl.classList.toggle('show')
+   })
+    </script>
 
 </html>

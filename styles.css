@@ -9,6 +9,7 @@
 
 div.nav-bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 6rem;
     width: 100vw;
@@ -22,8 +23,12 @@ div.logo {
 
 .hamburger{
     display: none;
-
 }
+
+.hamburger:focus {
+    outline: none;
+}
+
 ul.nav-links {
     display: flex;
     margin: 0;
@@ -362,13 +367,21 @@ div.footer h6 {
     }
 
     .hamburger{
-        display: inline-block;
+        display: block;
+        cursor: pointer;
     }
 
     ul.nav-links {
         display: none;
+        width: 100%;
         position: absolute;
+        top: 70px;
+        left: 88%;   
         flex-direction: column;
+    }
+
+    ul.nav-links.show{
+        display: flex;
     }
 
     ul li {
@@ -503,11 +516,15 @@ div.footer h6 {
     
     /* nav */
     div.nav-bar {
-        padding: 1.5rem;
+        padding: 2.5rem;
     }
 
     div.logo {
         font-size: 1.2rem;
+    }
+
+    ul.nav-links {
+        left: 78%;   
     }
 
     /* hero */
@@ -517,4 +534,13 @@ div.footer h6 {
     div.hero-content-heading h3 {
         font-size: 1.2rem;
     }
+
+    div.hero-content-btn a {
+        font-size: .6rem;
+    }
+
+    div.footer-btn a {
+        font-size: .6rem;
+    }
+
 }
